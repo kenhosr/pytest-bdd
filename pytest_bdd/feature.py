@@ -549,12 +549,7 @@ class Step(object):
         :param media_type: actual media type of Attachment, such as text/plain, image/png
         """
 
-        json_attachment = {
-                "data": data,
-                "media": {
-                    "type": media_type
-                }
-            }
+        json_attachment = {"data": data, "media": {"type": media_type}}
         self.embeddings.append(json_attachment)
 
     @property
